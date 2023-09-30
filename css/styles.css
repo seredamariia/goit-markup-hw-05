@@ -645,11 +645,11 @@ h3 {
   opacity: 0;
 }
 
-.checkbox:checked+.checkbox-icon .checkbox-tick {
+.checkbox-input:checked+.checkbox-label .checkbox-tick {
   opacity: 1;
 }
 
-.checkbox:checked+.checkbox-icon {
+.checkbox-input:checked+.checkbox-label .checkbox-icon {
   background-color: var(--pressed-state);
   border: none;
   fill: var(--white);
@@ -662,7 +662,7 @@ h3 {
   color: var(--subtle-text);
 }
 
-.checkbox-accent {
+.checkbox-label a {
   width: 16px;
   text-decoration-line: underline;
   color: var(--primary-brand);
