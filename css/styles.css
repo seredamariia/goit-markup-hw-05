@@ -479,6 +479,10 @@ h3 {
   fill: var(--light);
 }
 
+.footer-modal {
+  margin-left: 80px;
+}
+
 .footer-form {
   display: flex;
   gap: 24px;
@@ -489,13 +493,13 @@ h3 {
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--white);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   font-size: 12px;
   line-height: 1.5;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   padding-left: 16px;
   color: var(--white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-input::placeholder {
@@ -509,6 +513,11 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.subscription-icon {
+  margin-left: 16px;
+  fill: var(--white);
 }
 
 .backdrop {

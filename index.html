@@ -392,19 +392,24 @@
         </ul>
       </div>
 
-      <div class="form">
+      <div class="footer-modal">
         <p class="footer-subtitle">Subscribe</p>
         <form class="footer-form">
-          <label>
+          <label class="footer-label">
             <input type="email" name="user-email" placeholder="E-mail" class="footer-input">
           </label>
-          <button type="submit" class="button footer-button">Subscribe</button>
+          <button type="submit" class="button footer-button">
+            Subscribe
+            <svg width="24" height="24" class="subscription-icon">
+              <use href="./images/icons.svg#icon-subscription"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </div>
   </footer>
 
-  <div class="backdrop is-open">
+  <div class="backdrop">
     <div class="modal">
       <button type="button" class="modal-close">
         <svg width="8" height="8" class="close-icon">
