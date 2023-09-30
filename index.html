@@ -398,6 +398,11 @@
 
   <div class="backdrop">
     <div class="modal">
+      <div class="modal-close">
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </div>
       <h2 class="modal-header"> Leave your contacts and we will call you back</h2>
       <div class="modal-field">
         <label for="user-name" class="modal-label">Name</label>
@@ -435,9 +440,14 @@
       </div>
 
       <div class="checkbox-field">
-        <input type="checkbox" name="privacy-checkbox" id="privacy-checkbox">
-        <label for="privacy-checkbox" class="checkbox-label">I accept the terms and conditions of the Privacy
-          Policy</label>
+        <input type="checkbox" name="privacy-checkbox" id="privacy-checkbox" class="checkbox visually-hidden">
+        <div class="checkbox-icon">
+          <svg width="10" height="8" class="checkbox-tick">
+            <use href="./images/icons.svg#icon-tick"></use>
+          </svg>
+        </div>
+        <label for="privacy-checkbox" class="checkbox-label">I accept the terms and conditions of the <a href="">Privacy
+            Policy</a></label>
       </div>
 
       <button type="submit" class="button">Send</button>
