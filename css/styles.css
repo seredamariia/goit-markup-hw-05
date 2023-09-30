@@ -479,6 +479,38 @@ h3 {
   fill: var(--light);
 }
 
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04;
+  padding-left: 16px;
+  color: var(--white);
+}
+
+.footer-input::placeholder {
+  color: var(--white);
+}
+
+.footer-button {
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .backdrop {
   position: fixed;
   inset: 0;
@@ -486,8 +518,17 @@ h3 {
   align-items: center;
   justify-content: center;
   background-color: var(--modal-overlay);
-  visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -638,6 +679,7 @@ h3 {
   justify-content: center;
   fill: transparent;
   padding: 4px 3px;
+  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -652,7 +694,7 @@ h3 {
 .checkbox-input:checked+.checkbox-label .checkbox-icon {
   background-color: var(--pressed-state);
   border: none;
-  fill: var(--white);
+  fill: var(--light);
 }
 
 .checkbox-label {
@@ -662,7 +704,7 @@ h3 {
   color: var(--subtle-text);
 }
 
-.checkbox-label a {
+.checkbox-link {
   width: 16px;
   text-decoration-line: underline;
   color: var(--primary-brand);
